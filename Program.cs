@@ -11,6 +11,8 @@ sortedList.Add(9,"Ali");
 sortedList.Add(6,"Hande");
 sortedList.Add(1,"Elif");
 sortedList.Add(7,"Selçuk");
+
+//  Keğeri Uniq olmalıdır. Eğer koleksiyon içerisinde olan bir key değerini girerseniz, Derleme zamanı hatası değilde, çalışma zamanı hatası alırsınız.
 sortedList.Add(7,"Handan");
 
 // SortedList koleksiyonu, key ve value değerini, object tipinden alır.
@@ -32,5 +34,10 @@ sortedList.Add(7,"Handan");
 
 // Örnek : 
 
-bool isContains = sortedList.ContainsKey(90);
-Console.WriteLine(isContains);
+bool isContainsKey = sortedList.ContainsKey(90);
+Console.WriteLine(isContainsKey);
+
+bool isContainsValue = sortedList.ContainsValue("Elif");
+Console.WriteLine(isContainsValue);
+
+
